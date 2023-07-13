@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.e_commercefuture">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ECommerceFuture">
+        <activity android:name=".CurrentLocation2">
+
+        </activity>
+        <activity android:name=".ReviewAndComment.UserReadReviewAndComments"></activity>
+        <activity android:name=".Pay" />
+        <activity android:name=".UserProfile" />
+        <activity android:name=".ReviewAndComment.ReviewAndComment" />
+        <activity android:name=".Staff.AddItemWomanClothes" />
+        <activity android:name=".Staff.StaffHomePage2" />
+        <activity android:name=".SearchItemActivity" />
+        <activity android:name=".Staff.AdminCheckOrderActivity" />
+        <activity android:name=".UserOrderActivity" />
+        <activity android:name=".Staff.StaffAddItemActivity" />
+        <activity android:name=".CompleteOrderActivity" />
+        <activity android:name=".CartPage" />
+        <activity android:name=".ProductDetailsMenClothes22" />
+        <activity android:name=".EditProfile" />
+        <activity android:name=".ForgetPassword" />
+        <activity android:name=".RegisterAndLogin.LogInPage2" />
+        <activity android:name=".HeaderHomePage3333" />
+        <activity android:name=".RegisterAndLogin.RegisterAccount2" />
+        <activity android:name=".Staff.AddStockImageSlider" />
+        <activity android:name=".Staff.AddStockDresses" />
+        <activity android:name=".MainActivitySettings" />
+        <activity android:name=".HomePage2" />
+        <activity android:name=".MainActivityMenClothes" />
+        <activity android:name=".Staff.AddStock" />
+        <activity android:name=".Admin.AdminHomePage" />
+        <activity android:name=".Staff.StaffLogIn" />
+        <activity android:name=".Admin.AddStaffPage" />
+        <activity android:name=".Admin.AdminLogIn" />
+        <activity android:name=".Revision.MainActivityUserDataUpload" />
+        <activity android:name=".Revision.MainActivityPresentYourDataFireBase" />
+        <activity android:name=".Revision.MainActivityEnterYourDataFireBase" />
+        <activity android:name=".SplashScreen">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Revision.FragmentActivityWomanClothes" />
+        <activity android:name=".RegisterAndLogin.LogInChoose" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

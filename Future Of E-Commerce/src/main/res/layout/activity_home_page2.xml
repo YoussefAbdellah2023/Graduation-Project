@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomePage2"
+   >
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+    <com.denzcoskun.imageslider.ImageSlider
+        android:id="@+id/image_slider1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_250sdp"
+        android:layout_marginBottom="@dimen/_400sdp"
+
+        app:iss_auto_cycle="true"
+        app:iss_period="1000"
+        app:iss_delay="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+
+<!--            <RelativeLayout-->
+<!--                android:id="@+id/cateoriesRelativeLayout"-->
+<!--                android:layout_width="407dp"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_below="@+id/image_slider1"-->
+<!--                android:background="@color/white"-->
+<!--                android:padding="10dp"-->
+<!--                tools:ignore="MissingConstraints"-->
+<!--                tools:layout_editor_absoluteX="4dp"-->
+<!--                tools:layout_editor_absoluteY="324dp">-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/categoriesTv"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:fontFamily="sans-serif-black"-->
+<!--                    android:paddingBottom="15dp"-->
+<!--                    android:text="Categories"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:textStyle="bold" />-->
+
+
+<!--                <androidx.recyclerview.widget.RecyclerView-->
+<!--                    android:id="@+id/categoriesRecyclerView"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@+id/categoriesTv"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:paddingBottom="10dp" />-->
+
+<!--            </RelativeLayout>-->
+
+
+    <ImageButton
+        android:id="@+id/image_men_clothing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mensclothing"
+        app:layout_constraintTop_toBottomOf="@id/image_slider1"
+        android:layout_margin="@dimen/_10sdp"/>
+
+    <ImageButton
+        android:id="@+id/image_woman_clothing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/womanclothing"
+        app:layout_constraintTop_toBottomOf="@id/image_men_clothing"
+        android:layout_margin="@dimen/_10sdp"
+        />
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

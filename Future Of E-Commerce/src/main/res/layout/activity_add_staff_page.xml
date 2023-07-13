@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.AddStaffPage"
+    android:background="@drawable/addstaffpage">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/G5"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <EditText
+        android:id="@+id/add_staff_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/G5"
+        android:layout_margin="@dimen/_20sdp"
+        android:hint="Enter Email"
+        android:textColorHint="@color/black"
+        android:textSize="@dimen/_20sdp"
+        android:textColor="@color/black"
+        android:drawableStart="@drawable/email"
+        android:drawableLeft="@drawable/email"
+        android:drawablePadding="@dimen/_15sdp"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/add_staff_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_staff_email"
+        android:layout_margin="@dimen/_20sdp"
+        android:hint="Enter Password"
+        android:textColorHint="@color/black"
+        android:textSize="@dimen/_20sdp"
+        android:textColor="@color/black"
+        android:drawableStart="@drawable/pass"
+        android:drawableLeft="@drawable/pass"
+        android:drawablePadding="@dimen/_15sdp"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/btn_register_staff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/add_staff_pass"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="@dimen/_40sdp"
+        android:background="@drawable/signup_btn_background"
+        android:text="Register Account"
+        android:textSize="@dimen/_20sdp"
+        android:backgroundTint="@color/gray"
+        android:textColor="@color/red"/>
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="20dp"
+        android:background="@color/design_default_color_primary_dark"
+        tools:ignore="MissingConstraints"
+        >
+
+
+
+
+<!--        <ScrollView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"/>-->
+
+        <TextView
+            android:id="@+id/review"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Review"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_20sdp"
+            android:layout_marginLeft="2dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+
+
+
+
+        <TextView
+            android:id="@+id/comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Comments"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_20sdp"
+            android:textStyle="bold"
+            android:layout_below="@+id/review"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_20sdp"
+            />
+
+
+
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

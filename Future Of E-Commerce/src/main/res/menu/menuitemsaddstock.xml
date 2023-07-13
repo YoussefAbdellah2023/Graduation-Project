@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item android:id="@+id/action_more"
+        android:title=""
+        android:icon="@drawable/ic_menu"
+        app:showAsAction="always">
+
+
+
+        <menu>
+
+
+
+            <item
+                android:id="@+id/add_stock_mwn_clothes"
+                android:title="Add Stock Men Clothes"
+                />
+
+            <item
+                android:id="@+id/add_stock_dresses_woman"
+                android:title="Add Stock Dresses Woman" />
+
+            <item
+                android:id="@+id/add_stock_jacket_woman"
+                android:title="Add Stock Jackets Woman" />
+
+            <item
+                android:id="@+id/add_stock_sweatshirt_woman"
+                android:title="Add Stock Sweat-Shirt Woman " />
+
+            <item
+                android:id="@+id/add_stock_shoes_woman"
+                android:title="Add Stock Shoes Woman " />
+
+            <item
+                android:id="@+id/add_stock_image_slider"
+                android:title="Add Image Slider " />
+
+
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+    android:id="@+id/img"
+    android:icon="@drawable/imgsplash"
+    app:showAsAction="always"
+    android:title=""
+    android:visible="true"/>
+    <item
+        android:id="@+id/app_bar_search"
+        android:icon="@drawable/ic_search"
+        android:title="Search"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/action_more"
+        android:title=""
+        android:icon="@drawable/ic_menu"
+        app:showAsAction="always">
+
+
+
+        <menu>
+
+
+
+            <item
+                android:id="@+id/home_menu"
+                android:title="Home"
+                android:icon="@drawable/ic_home"/>
+
+            <item
+                android:id="@+id/profile"
+                android:title="Profile"
+                android:icon="@drawable/ic_baseline_person"/>
+
+            <item
+                android:id="@+id/favorites"
+                android:title="Favorites"
+                android:icon="@drawable/ic_favorite"/>
+
+            <item
+                android:id="@+id/basket"
+                android:title="Basket"
+                android:icon="@drawable/nav_cart"/>
+
+            <item
+                android:id="@+id/Order"
+                android:title="My Orders"
+                android:icon="@drawable/ic_menu_orders"/>
+
+
+            <item
+                android:id="@+id/settings"
+                android:title="Settings"
+                android:icon="@drawable/ic_baseline_settings_24"/>
+
+            <item
+                android:id="@+id/chatbot"
+                android:title="ChatBot"
+                android:icon="@drawable/chatbot"/>
+
+            <item
+                android:id="@+id/logout"
+                android:title="LogOut"
+                android:icon="@drawable/ic_logout"/>
+
+
+
+
+        </menu>
+    </item>
+
+
+</menu>

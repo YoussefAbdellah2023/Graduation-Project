@@ -1,0 +1,2 @@
+include ':Future Of E-Commerce'
+rootProject.name = "Future Of E-Commerce"

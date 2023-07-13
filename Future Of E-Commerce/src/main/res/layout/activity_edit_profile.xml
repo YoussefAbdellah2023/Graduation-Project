@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditProfile">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+    <ProgressBar
+        android:id="@+id/prog_bar_update_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="gone"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/edit_image_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_130sdp"
+        android:src="@drawable/profile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+       android:background="@color/design_default_color_primary" />
+
+    <TextView
+        android:id="@+id/edit_change_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_image_profile"
+        android:text="Update Profile"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="@dimen/_20sdp"
+        android:layout_margin="@dimen/_20sdp"/>
+
+    <EditText
+        android:id="@+id/edit_username_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/edit_change_photo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:hint="Update User Name"
+        android:textColorHint="@color/black"
+        android:textSize="@dimen/_20sdp"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/edit_email_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/edit_username_profile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:hint="Update Email"
+        android:textColorHint="@color/black"
+        android:textSize="@dimen/_20sdp"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:id="@+id/edit_password_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/edit_email_profile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:hint="Update Password"
+        android:textColorHint="@color/black"
+        android:textSize="@dimen/_20sdp"
+        android:inputType="textPassword"/>
+
+    <EditText
+        android:id="@+id/edit_confirmpassword_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/edit_password_profile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:hint="Update Confirm Password"
+        android:textColorHint="@color/black"
+        android:textSize="@dimen/_20sdp"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/btn_save_update_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/edit_confirmpassword_profile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="@dimen/_20sdp"
+        android:background="@drawable/signup_btn_background"
+        android:backgroundTint="@color/red"
+        android:text="Update Profile"
+        android:textSize="@dimen/_20sdp"
+        android:textStyle="italic"/>
+
+<!--            <Button-->
+<!--                android:id="@+id/button_update_image_profile"-->
+<!--                android:layout_width="44dp"-->
+<!--                android:layout_height="35dp"-->
+<!--                android:background="@drawable/ic_menu_camera"-->
+<!--                tools:layout_editor_absoluteX="223dp"-->
+<!--                tools:layout_editor_absoluteY="134dp"-->
+<!--                tools:ignore="MissingConstraints" />-->
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

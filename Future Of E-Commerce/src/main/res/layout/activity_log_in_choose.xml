@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterAndLogin.LogInChoose"
+    android:background="@drawable/loginchoose">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/G5"
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.1" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgeloginchoose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/imgsplash"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/G5" />
+
+          <Button
+              android:id="@+id/btnreg"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              app:layout_constraintTop_toBottomOf="@id/imgeloginchoose"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintEnd_toEndOf="parent"
+              android:text="New User?Register Now"
+              android:layout_margin="@dimen/_100sdp"
+              android:textSize="@dimen/_20sdp"
+              android:background="@drawable/signup_btn_background"
+              android:backgroundTint="@color/green"
+              android:textAllCaps="false"
+              android:textColor="@color/white"/>
+
+
+       <Button
+           android:id="@+id/btnlogin"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           app:layout_constraintTop_toBottomOf="@id/btnreg"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           android:text="Already Have Account? LogIn"
+           android:layout_margin="@dimen/_50sdp"
+           android:background="@drawable/signup_btn_background"
+           android:textSize="@dimen/_21sdp"
+           android:textAllCaps="false"
+           android:textColor="@color/white"
+           android:backgroundTint="@color/purple"/>
+
+
+            <TextView
+                android:id="@+id/btn_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/btnlogin"
+                android:padding="@dimen/_20sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="Admin LogIn"
+                android:textSize="@dimen/_16sdp"
+                android:textColor="@color/red"
+                android:fontFamily="sans-serif-black"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <TextView
+                android:id="@+id/btn_staff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:padding="@dimen/_20sdp"
+                android:text="Staff LogIn"
+                android:textColor="@color/red"
+                android:textSize="@dimen/_16sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnlogin"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_margin="@dimen/_20sdp"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
